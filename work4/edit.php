@@ -8,9 +8,9 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$name = $_GET['name'];
-$comment = $_GET['comment'];
-$link = $_GET['link'];
+$name = $_GET['NewName'];
+$comment = $_GET['NewComment'];
+$link = $_GET['NewLink'];
 $id = $_GET['id']
 
 
