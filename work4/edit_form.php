@@ -25,7 +25,7 @@
             <div class="form-group"><a type="button" class="btn btn-primary" href="edit.php?NewName=<?php echo $Result['NewName']?>&NewComment=<?php echo $Result['NewComment']?>&NewLink=<?php echo $Result['NewLink']?>&id=<?php echo $Result['id']?>">SAVE</a></div>
 
         </form>
-        <div class="text-center">
+        <div class="text-center" style="margin-top: 10px;">
             <a type="button" class="btn btn-primary" href="show.php">BACK</a>
         </div>
     </div>
