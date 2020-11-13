@@ -23,7 +23,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<h2 class="text-center" style="margin-top: 0px;padding-top: 6px;padding-bottom: 12px;margin-bottom: 0px;">ITFLab Database</h2>
+<h2 class="text-center" style="margin-top: 0px;background: #2a2a2a;color: rgb(241,241,241);padding-top: 6px;padding-bottom: 12px;margin-bottom: 0px;">ITFLab Database</h2>
 <table width="600" class="table table-dark table-bordered">
   <tr>
     <th width="50"> <div align="left">ID</div></th>
