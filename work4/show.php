@@ -38,7 +38,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a type="button" class="btn btn-warning" href="edit.php?name=<?php echo $Result['Name']?>">EDIT</a><a type="button" class="btn btn-danger" href="delete.php?name=<?php echo $Result['Name']?>">DELETE</a></td>
+    <td><a type="button" class="btn btn-warning" href="edit_form.php?name=<?php echo $Result['Name']?>">EDIT</a><a type="button" class="btn btn-danger" href="delete.php?name=<?php echo $Result['Name']?>">DELETE</a></td>
   </tr>
 <?php
 }
