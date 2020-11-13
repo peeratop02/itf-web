@@ -16,6 +16,6 @@ if ($res){
     
 }
 else{
-    echo"<script>alert('Sorry. Unable to delete the record.); window.location = 'show.php'</script>";;
+    echo"<script>alert('Sorry. Unable to delete the record.); window.location = 'show.php';</script>";;
 }
 ?>
