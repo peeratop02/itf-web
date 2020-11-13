@@ -22,7 +22,7 @@
             <h2 class="text-center">Edit <?php echo $name; ?></h2>
             <div class="form-group"><input class="form-control" type="text" name="NewName" id="idNewName" value="<?php echo $name; ?>"></div>
             <div class="form-group"><textarea class="form-control" name="NewComment" id="idNewComment" value="<?php echo $comment; ?>" rows="14"></textarea></div><input class="form-control" type="text" name="NewLink" id="idNewLink" value="<?php echo $link; ?>">
-            <div class="form-group"><a type="button" class="btn btn-success" href="edit.php?NewName=<?php echo $Result['NewName']?>&NewComment=<?php echo $Result['NewComment']?>&NewLink=<?php echo $Result['NewLink']?>&id=<?php echo $Result['id']?>">SAVE</a></div>
+            <div class="form-group"><a type="button" class="btn btn-primary" href="edit.php?NewName=<?php echo $Result['NewName']?>&NewComment=<?php echo $Result['NewComment']?>&NewLink=<?php echo $Result['NewLink']?>&id=<?php echo $Result['id']?>">SAVE</a></div>
 
         </form>
     </div>
