@@ -12,10 +12,10 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, "DELETE FROM guestbook WHERE Name='$name'");
 
 if ($res){
-    echo"<script>alert('delete completed'); window.location = 'show.php'</script>";
+    echo"<script>alert('Record Deleted. Going back to Database Table'); window.location = 'show.php'</script>";
     
 }
 else{
-    echo "Nooooooooooooo";
+    echo"<script>alert('Sorry. Unable to delete the record.); window.location = 'show.php'</script>";;
 }
 ?>
