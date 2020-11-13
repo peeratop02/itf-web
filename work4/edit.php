@@ -15,8 +15,6 @@ $id = $_GET['id']
 
 
 $sql = "UPDATE guestbook SET Name='$name' WHERE id=$id";
-$sql = "UPDATE guestbook SET Comment='$comment' WHERE id=$id";
-$sql = "UPDATE guestbook SET Link='$link' WHERE id=$id";
 
 
 if (mysqli_query($conn, $sql)) {
