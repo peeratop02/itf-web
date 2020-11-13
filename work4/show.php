@@ -51,7 +51,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 <div class="text-center">
-  <a type="button" class="btn btn-primary" href="index.php">BACK</a>
+  <a type="button" class="btn btn-primary" href="index.html">BACK</a>
 </div>
 
 </body>
