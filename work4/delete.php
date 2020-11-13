@@ -12,8 +12,8 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, "DELETE FROM guestbook WHERE Name='$name'");
 
 if ($res){
-    echo"<script>alert('delete completed');</script>";
-    header('Location: show.php');
+    echo"<script>alert('delete completed'); window.location = 'show.php'</script>";
+    
 }
 else{
     echo "Nooooooooooooo";
