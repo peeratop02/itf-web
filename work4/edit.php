@@ -15,10 +15,12 @@ $id = $_POST['id']
 
 
 $sql = "UPDATE guestbook SET Name='$name' WHERE id='$id'";
+$sql = "UPDATE guestbook SET Comment='$comment' WHERE id='$id'";
+$sql = "UPDATE guestbook SET Link='$link' WHERE id='$id'";
 
 
-if (mysqli_query($conn, $sql)) {
-    echo "Update record $name completed!";
+if (mysqli_query($conn, $sql)) 
+  {
     echo"<script>alert('Update record $name completed! Going back to Database Table'); window.location = 'show.php'</script>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
