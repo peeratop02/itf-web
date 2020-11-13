@@ -21,7 +21,7 @@
             <h2 class="text-center">Edit <?php echo $name; ?></h2>
             <div class="form-group"><input class="form-control" type="text" name="name" id="idName" value="<?php echo $name; ?>"></div>
             <div class="form-group"><textarea class="form-control" name="comment" id="idComment" value="<?php echo $comment; ?>" rows="14"></textarea></div><input class="form-control" type="text" name="link" id="idLink" value="<?php echo $link; ?>">
-            <div class="form-group"><button class="btn btn-primary" type="submit" id="commentBtn">submit</button><a class="btn btn-primary" role="button" href="show.php" style="margin-left: 145px;padding-left: 16px;padding-right: 16px;background: rgb(210,49,155);">view database</a></div>
+            <div class="form-group"><a type="button" class="btn btn-success" href="edit.php?name=<?php echo $Result['Name']?>&comment=<?php echo $Result['Comment']?>&link=<?php echo $Result['Link']?>">EDIT</a></div>
             
         </form>
     </div>
