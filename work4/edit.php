@@ -13,22 +13,15 @@ $comment = $_POST['NewComment'];
 $link = $_POST['NewLink'];
 $id = $_POST['id'];
 
-
+$count = 0;
 $sql = "UPDATE guestbook SET Name='$name' WHERE id='$id'";
-mysqli_query($conn, $sql)
+mysqli_query($conn, $sql);
 $sql = "UPDATE guestbook SET Comment='$comment' WHERE id='$id'";
-mysqli_query($conn, $sql)
+mysqli_query($conn, $sql);
 $sql = "UPDATE guestbook SET Link='$link' WHERE id='$id'";
-mysqli_query($conn, $sql)
+mysqli_query($conn, $sql);
 
 
-if (mysqli_query($conn, $sql)) 
-  {
-    echo"<script>alert('Update record $name completed! Going back to Database Table'); window.location = 'show.php';</script>";
-  }
-else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
-  
+echo"<script>alert('Update record $name completed! Going back to Database Table'); window.location = 'show.php';</script>";
 mysqli_close($conn);
 ?>
