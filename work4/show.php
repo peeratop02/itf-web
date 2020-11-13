@@ -25,6 +25,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <table width="600" class="table table-dark table-bordered">
   <tr>
+    <th width="100"> <div align="left">ID</div></th>
     <th width="100"> <div align="left">Name</div></th>
     <th width="350"> <div align="left">Comment </div></th>
     <th width="300"> <div align="left">Link </div></th>
@@ -35,10 +36,11 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
+    <td><?php echo $Result['ID'];?></div></td>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a type="button" class="btn btn-warning" href="edit_form.php?name=<?php echo $Result['Name']?>&comment=<?php echo $Result['Comment']?>&link=<?php echo $Result['Link']?>">EDIT</a><a type="button" class="btn btn-danger" href="delete.php?name=<?php echo $Result['Name']?>">DELETE</a></td>
+    <td><a type="button" class="btn btn-warning" href="edit_form.php?id=<?php echo $Result['ID']?>&name=<?php echo $Result['Name']?>&comment=<?php echo $Result['Comment']?>&link=<?php echo $Result['Link']?>">EDIT</a><a type="button" class="btn btn-danger" href="delete.php?name=<?php echo $Result['Name']?>">DELETE</a></td>
   </tr>
 <?php
 }
