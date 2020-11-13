@@ -18,11 +18,11 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table width="600" class="table table-dark table-striped">
+<table width="600" class="table table-dark table-bordered">
   <tr>
-    <th width="100"> <div align="center">Name</div></th>
-    <th width="350"> <div align="center">Comment </div></th>
-    <th width="250"> <div align="center">Link </div></th>
+    <th width="100"> <div align="left">Name</div></th>
+    <th width="350"> <div align="left">Comment </div></th>
+    <th width="250"> <div align="left">Link </div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
