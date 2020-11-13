@@ -11,14 +11,16 @@
 </head>
 <?php 
     $name = $_GET['name'];
+    $comment = $_GET['comment'];
+    $link = $_GET['link'];
 
 ?>
 <body>
     <div class="contact-clean">
         <form action = "insert.php" method="post" id="CommentForm">
             <h2 class="text-center">Edit <?php echo $name; ?></h2>
-            <div class="form-group"><input class="form-control" type="text" name="name" id="idName" placeholder="Name"></div>
-            <div class="form-group"><textarea class="form-control" name="comment" id="idComment" placeholder="Comment" rows="14"></textarea></div><input class="form-control" type="text" name="link" id="idLink" placeholder="Link">
+            <div class="form-group"><input class="form-control" type="text" name="name" id="idName" placeholder="<?php echo $name; ?>"></div>
+            <div class="form-group"><textarea class="form-control" name="comment" id="idComment" placeholder="<?php echo $comment; ?>" rows="14"></textarea></div><input class="form-control" type="text" name="link" id="idLink" placeholder="<?php echo $link; ?>">
             <div class="form-group"><button class="btn btn-primary" type="submit" id="commentBtn">submit</button><a class="btn btn-primary" role="button" href="show.php" style="margin-left: 145px;padding-left: 16px;padding-right: 16px;background: rgb(210,49,155);">view database</a></div>
             
         </form>
