@@ -12,6 +12,7 @@ $name = $_POST['NewName'];
 $comment = $_POST['NewComment'];
 $link = $_POST['NewLink'];
 $id = $_POST['id'];
+echo $id;
 
 $count = 0;
 $sql = "UPDATE guestbook SET Name='$name' WHERE id='$id'";
