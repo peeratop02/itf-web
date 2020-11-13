@@ -20,7 +20,7 @@
                     <li class="nav-item mx-0 mx-lg-1"></li>
                     <li class="nav-item mx-0 mx-lg-1"></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">My work</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="work1/index.php">Funny story</a><a class="dropdown-item" href="work2/index.html">Layout design</a><a class="dropdown-item" href="work3/index.html">card layout design</a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="work1/index.php">Funny story</a><a class="dropdown-item" href="work2/index.html">Layout design</a><a class="dropdown-item" href="work3/index.html">card layout design</a><a class="dropdown-item" href="work4/index.html">MySQL Form</a></div>
                     </li>
                 </ul>
             </div>
@@ -58,6 +58,14 @@
                     <div class="card-body">
                         <h3 class="text-center card-title"><a href="work3/index.html">Card Layout Design</a></h3>
                         <h6 class="text-center text-secondary card-subtitle mb-2">LAB 12 Assignment #2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="margin-top: 15px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-center card-title"><a href="work4/index.html">MySQL Form</a></h3>
+                        <h6 class="text-center text-secondary card-subtitle mb-2">LAB 13 Assignment</h6>
                     </div>
                 </div>
             </div>
