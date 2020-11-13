@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="contact-clean">
-        <form action = "insert.php" method="post" id="CommentForm">
+        <form action = "edit.php" method="post" id="CommentForm">
             <h2 class="text-center">Edit <?php echo $name; ?></h2>
             <div class="form-group"><input class="form-control" type="text" name="NewName" id="idNewName" value="<?php echo $name; ?>"></div>
             <div class="form-group"><textarea class="form-control" name="NewComment" id="idNewComment" rows="14"><?php echo $comment; ?></textarea></div><input class="form-control" type="text" name="NewLink" id="idNewLink" value="<?php echo $link; ?>">
