@@ -14,7 +14,8 @@ $link = $_POST['NewLink'];
 $id = $_POST['id'];
 
 
-$sql = "UPDATE guestbook SET Name='$name' AND Comment='$comment' AND Link='$link' WHERE id='$id'";
+$sql = "UPDATE guestbook (Name, Comment, Link) SET ('$name', '$comment', '$link')";
+#SET Name='$name' AND Comment='$comment' AND Link='$link' WHERE id='$id'
 mysqli_query($conn, $sql);
 
 
